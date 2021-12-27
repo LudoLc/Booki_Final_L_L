@@ -47,6 +47,43 @@ p
     margin-bottom: 40px;
 }
 
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap:50px;
+}
+
+li {
+    list-style-type: none;
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+
+li a:hover
+{
+    margin-top: 2px;
+    padding-top: 20px;
+    border-top: 2px solid blue;
+    color: blue;
+}
+
+#barreDenav:hover
+{
+    color:blue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+}
 .barreNavigation
 {
     display: flex;
@@ -62,28 +99,7 @@ p
     width: 100%;
 }
 
-.navbar:hover
-{
-    border-top: solid 2px #0065FC;  
-}
 
-.navbar a:hover
-{
-    box-shadow: 0px -3px 0px 0px rgba(0,101,252,1);
-    color: #0065FC;
-}
-.barreNav
-{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    margin-top: 30px;
-}
-
-.navbar
-{
-    border-top: solid 2px white;
-    padding-top: 15%;
-}
 
 .titreTop
 {
@@ -331,7 +347,6 @@ button:hover
 
 .hebergM
 {
-    margin-top: 4%;
     margin-bottom: 3%;
     font-family: 'Raleway', sans-serif;
     margin-left: 1.5%;
@@ -340,82 +355,48 @@ button:hover
 
 #hebergements
 {
-    display: flex;
-    flex-direction: column;
     background-color: #f2f2f2;
-    padding: 1%;
-    width: 65%;
+    padding: 3%;
     border-radius: 4%;
-    margin-left: -3%;
-    max-height: 950px;
 }
 
-.hebRow1 
-{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 4%;
-    
 
-}
+    .containerTotal
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
 
-.hebRow2
-{
-    display: flex;
-    justify-content: space-around;
-}
+
+    .hebDescription
+    {
+        padding-left: 10px;
+    }
+
 
 .hebCard
 {
-    display: flex;
-    flex-direction: column;
-    max-width: 30%;
-    align-items: flex-start;
-    padding: 0.5%;
+    margin: 8px 0;
+    width: calc(31% - 10px);
     border-radius: 30px;
-    max-height: 190px;
+    background-color: white;
+    border: solid 6px white;
+    overflow:hidden;
+    
 }
 
 
-.hebCardLarge
-{
-    display: flex;
-    flex-direction: column;
-    max-width: 30%;
-    align-items: flex-start;
-    border-radius: 30px;
-}
+
 
 .hebImg
 {
     object-fit: cover;
     width: 100%;
-    height: 62%;
-    border-radius: 30px 30px 0 0;
-    border: solid 4px white;
+    height: 140px;
 }
 
-.hebImgLarge
-{
-    object-fit: cover;
-    width: 100%;
-    height: 29%;
-    border-radius: 30px;
-    border-radius: 30px 30px 0 0;
-    padding: 2%;
-    background-color: white;
-}
-
-.hebDescription
-{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 0 0 30px 30px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
 
 .prix
 {
@@ -451,7 +432,7 @@ button:hover
     flex-direction: row;
     column-gap: 40px;
     margin-bottom: 0%;
-    max-height: 630px;
+    justify-content: space-between;
 }
 
 .arrow
@@ -463,8 +444,6 @@ button:hover
 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    margin-top: -25%;
-    margin-bottom: 3%;
     margin-left: 0.5%;
     font-size: 18px;
 }
@@ -483,7 +462,6 @@ button:hover
 {
     padding: 2%;
     border-radius: 30px;
-    gap:30px;
 }
 
 
@@ -496,7 +474,9 @@ button:hover
     padding-top: 7%;
     padding-left: 4%;
     cursor: pointer;
+    padding-bottom: 20px;
 }
+
 
 
 .popImg
@@ -505,7 +485,7 @@ button:hover
     max-height: 270px;
     border-radius: 30px 0 0 30px;
     margin: 2%;
-    max-width: 48%;
+    max-width: 43%;
     min-width: 135px;
     
 }
@@ -883,32 +863,17 @@ footer
 
     }
     
-    .hebCard{
-        display: flex;
+    .hebCard
+    {
         height: 300px;
         max-width: 100%;
         box-shadow: 0px 0px 9px 0px rgba(173,170,173,1);
         margin-bottom: 20px;
     }
 
-    .hebRow1
-    {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .hebRow2
-    {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-    }
-
 
     .hebCardLarge
     {
-        display: flex;
         height: 190px;
         max-width: 100%;
         box-shadow: 0px 0px 9px 0px rgba(173,170,173,1);
